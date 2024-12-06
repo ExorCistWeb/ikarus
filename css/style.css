@@ -121,6 +121,8 @@ body {
 header {
     position: absolute;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     padding: 26px 0;
     z-index: 999;
