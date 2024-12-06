@@ -636,3 +636,23 @@ footer {
     flex-direction: column;
     gap: 9px;
 }
+
+#executors {
+    padding: 50px 0 100px;
+}
+
+.executors_ul {
+    padding-left: 20px;
+}
+
+.executors_ul li {
+    list-style: disc;
+}
+
+.executors .title_section {
+    max-width: unset;
+}
+
+.executors .title_section_orders {
+    max-width: 513px;
+}
