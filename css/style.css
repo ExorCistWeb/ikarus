@@ -637,7 +637,8 @@ footer {
     gap: 9px;
 }
 
-#executors {
+#executors,
+#customers {
     padding: 50px 0 100px;
 }
 
