@@ -523,14 +523,14 @@ footer {
     padding-top: 110px;
 }
 
-.about_pages .about ul {
+.about ul {
     display: flex;
     align-items: center;
     gap: 5px;
     margin-bottom: 30px;
 }
 
-.about_pages .about ul li:after {
+.about ul li:after {
     content: "/";
     margin-left: 5px;
     font-style: normal;
@@ -541,11 +541,11 @@ footer {
     color: #FFFFFF;
 }
 
-.about_pages .about ul li:last-child::after {
+.about ul li:last-child::after {
     display: none;
 }
 
-.about_pages .about ul li a {
+.about ul li a {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -637,8 +637,7 @@ footer {
     gap: 9px;
 }
 
-#executors,
-#customers {
+.padd_sect {
     padding: 50px 0 100px;
 }
 
@@ -656,4 +655,88 @@ footer {
 
 .executors .title_section_orders {
     max-width: 513px;
+}
+
+.about {
+    position: relative;
+}
+
+.about_logo {
+    position: absolute;
+    right: 0;
+    width: 237px;
+    height: 237px;
+    top: 30%;
+}
+
+.about_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.about_additionally {
+    padding: 154px 0 0;
+}
+
+.about_additionally .about ul li a {
+    color: var(--five-color);
+}
+
+.about_additionally .about ul li::after {
+    color: var(--five-color);
+}
+
+.contact_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 200px;
+    gap: 50px;
+}
+
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 325px;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact_info span {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #333333;
+}
+
+.contact_info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #333333;
+}
+
+.contact_box h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.title_section_contact .blue_btn {
+    padding: 10px 45px;
+    width: 100%;
+    max-width: 208px;
+}
+
+.title_section_contact {
+    margin-bottom: 60px;
 }
