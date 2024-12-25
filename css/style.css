@@ -740,3 +740,116 @@ footer {
 .title_section_contact {
     margin-bottom: 60px;
 }
+
+.forms_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 154px 0 100px;
+}
+
+.forms_page form {
+    width: 500px;
+    min-height: 427px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.forms_page form h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.form_input {
+    background: #FFFFFF;
+    border: 1px solid var(--five-color);
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    color: var(--five-color);
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form_input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    color: var(--five-color);
+}
+
+.save_account {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.save_account a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #333333;
+}
+
+.radio_input label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #333333;
+}
+
+.radio_input {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.form_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background: #3399FF;
+    border-radius: 30px;
+    /* Войти */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.form_link {
+    background: #333333;
+    margin: 10px 0;
+}
+
+.form_info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px !important;
+    color: #333333;
+}
