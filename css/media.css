@@ -2,13 +2,24 @@
     /* Меню для мобильной версии */
     .nav {
         position: relative;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
         order: 1;
     }
     .menu {
         list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         position: fixed;
         top: 0;
@@ -17,7 +28,11 @@
         background-color: #fff;
         opacity: 0;
         visibility: hidden;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
         transform: translateY(-100%);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
         z-index: 1000;
         padding: 45px 0 100px;
@@ -25,6 +40,8 @@
     .menu.active {
         opacity: 1;
         visibility: visible;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
         transform: translateY(0);
     }
     .menu li {
@@ -32,6 +49,8 @@
     }
     .menu li a {
         text-decoration: none;
+        -webkit-transition: color 0.3s;
+        -o-transition: color 0.3s;
         transition: color 0.3s;
     }
     .header ul li a {
@@ -41,10 +60,15 @@
         color: #007bff;
     }
     .hamburger {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background: none;
         border: none;
         cursor: pointer;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 5px;
         padding: 10px;
@@ -55,15 +79,23 @@
         width: 25px;
         height: 3px;
         background-color: #000;
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        transition: opacity 0.3s, -webkit-transform 0.3s;
+        -o-transition: transform 0.3s, opacity 0.3s;
         transition: transform 0.3s, opacity 0.3s;
+        transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
     }
     .hamburger.active span:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        -ms-transform: translateY(8px) rotate(45deg);
         transform: translateY(8px) rotate(45deg);
     }
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
     .hamburger.active span:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
     /* Блокировка прокрутки при открытом меню */
@@ -73,6 +105,9 @@
     .delivery_top,
     .delivery_bottom,
     .footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     h1.title_h1 {
@@ -107,6 +142,8 @@
         padding: 85px 0 90px;
     }
     .lease_flex {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         gap: 40px 15px;
     }
@@ -127,5 +164,34 @@
     }
     header {
         padding: 10px 0;
+    }
+    .about_logo {
+        display: none;
+    }
+    .contact_flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-right: 0;
+        width: 100%;
+    }
+    .contact_box {
+        max-width: 100%;
+    }
+    .about_additionally {
+        padding: 85px 0 30px;
+    }
+    .mb100 {
+        margin-bottom: 60px !important;
+    }
+    .title_section_orders {
+        margin-top: 60px;
+    }
+    .news {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 0;
     }
 }
