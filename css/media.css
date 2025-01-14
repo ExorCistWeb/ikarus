@@ -2,6 +2,7 @@
     /* Меню для мобильной версии */
     .nav {
         position: relative;
+        order: 1;
     }
     .menu {
         list-style: none;
@@ -13,13 +14,13 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.97);
+        background-color: #fff;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-100%);
         transition: all 0.3s ease;
         z-index: 1000;
+        padding: 45px 0 100px;
     }
     .menu.active {
         opacity: 1;
@@ -27,14 +28,14 @@
         transform: translateY(0);
     }
     .menu li {
-        margin: 15px 0;
+        margin: 10px 0;
     }
     .menu li a {
         text-decoration: none;
-        color: #000;
-        font-size: 1.5rem;
-        font-weight: bold;
         transition: color 0.3s;
+    }
+    .header ul li a {
+        font-size: 22px;
     }
     .menu li a:hover {
         color: #007bff;
@@ -68,5 +69,63 @@
     /* Блокировка прокрутки при открытом меню */
     body.menu-open {
         overflow: hidden;
+    }
+    .delivery_top,
+    .delivery_bottom,
+    .footer {
+        flex-direction: column;
+    }
+    h1.title_h1 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+    .wrapper {
+        padding: 0 20px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .blue_btn {
+        padding: 10px 25px;
+    }
+    .header {
+        gap: 15px;
+    }
+    .logo span {
+        display: none;
+    }
+    #about {
+        /* background-repeat: no-repeat; */
+        background-position: left bottom;
+        min-height: 560px;
+    }
+    .delivery_top {
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    #delivery {
+        padding: 85px 0 90px;
+    }
+    .lease_flex {
+        justify-content: center;
+        gap: 40px 15px;
+    }
+    #lease {
+        padding: 45px 0 85px;
+    }
+    #any_questions {
+        padding: 85px 0 85px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .footer {
+        gap: 40px;
+    }
+    .insta {
+        position: relative;
+    }
+    header {
+        padding: 10px 0;
     }
 }

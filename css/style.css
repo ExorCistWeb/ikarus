@@ -148,6 +148,17 @@ header {
     z-index: 999;
 }
 
+.header_content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .header_pages {
     background: #fff;
     padding: 10px 0;
