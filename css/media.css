@@ -194,4 +194,8 @@
         justify-content: center;
         margin-top: 0;
     }
+    .delivery_box {
+        min-width: unset;
+        height: auto;
+    }
 }
