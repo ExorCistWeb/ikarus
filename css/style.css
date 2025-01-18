@@ -135,7 +135,7 @@ p.p_14px {
 body {
     font-family: "Open Sans", sans-serif;
     background: var(--one-color);
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
 }
 
@@ -445,6 +445,9 @@ header {
     border-radius: 20px;
     width: 346px;
     height: 260px;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .lease_img img {
