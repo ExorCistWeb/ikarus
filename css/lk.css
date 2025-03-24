@@ -565,8 +565,9 @@ td {
 .chat-message {
     margin-bottom: 10px;
     max-width: 80%;
-    padding: 8px 12px;
+    padding: 8px 12px 14px 12px;
     border-radius: 12px;
+    overflow-wrap: break-word;
     position: relative;
 }
 
@@ -611,5 +612,9 @@ td {
     margin-left: 10px;
     position: absolute;
     bottom: 2px;
-    right: 2px;
+    right: 4px;
+}
+
+.user-message .message-time {
+    color: #fff;
 }
