@@ -503,3 +503,41 @@ td {
     /* identical to box height */
     color: #FFFFFF;
 }
+
+.lk .accordion {
+    width: 100%;
+}
+
+.lk .accordion-header {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.lk .accordion-content {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 0;
+    color: #333333;
+}
+
+.lk .accordion-item {
+    padding: 20px 0 10px 0;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.1);
+}
+
+.lk .faq_plus {
+    width: 20px;
+    height: 20px;
+}
+
+.lk .faq_plus img {
+    width: 100%;
+    height: 100%;
+}
