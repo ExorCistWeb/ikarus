@@ -618,3 +618,101 @@ td {
 .user-message .message-time {
     color: #fff;
 }
+
+.settings_box {
+    padding: 20px 0 15px;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.1);
+}
+
+.settings_box:last-child {
+    border: none;
+}
+
+.settings_box h5 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.password_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.password_info p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.password_info .password {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.15em;
+    color: #333333;
+    width: 108px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #F9F9F9;
+    border: 1px solid #333333;
+    border-radius: 50px;
+    padding-top: 5px;
+}
+
+.edit_pass {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    border-bottom: 2px solid #333;
+    color: #333333;
+    background: none;
+}
+
+.delete_user {
+    width: 119px;
+    height: 20px;
+    background: #3399FF;
+    border-radius: 50px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+#language {
+    background: #F9F9F9;
+    border: 1px solid #333333;
+    border-radius: 50px;
+    width: 150px;
+    padding: 0 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #333333;
+}
