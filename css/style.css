@@ -1316,3 +1316,348 @@ footer {
     color: #000000;
     border-bottom: 2px solid #000;
 }
+
+.header_pages_map {
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.form_order {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: #fff;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.form_order form {
+    scrollbar-width: none;
+    /* для Firefox */
+    max-height: 480px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.form_order form::-webkit-scrollbar {
+    display: none;
+    /* для Chrome, Safari */
+}
+
+.title_form {
+    width: 100%;
+    height: 60px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #3399FF;
+}
+
+.title_form h3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.form_content {
+    padding: 30px 15px 20px;
+}
+
+.form_order hr {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.1);
+}
+
+.input_box {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+    justify-content: start;
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 40px;
+    margin-bottom: 15px;
+}
+
+.input_box input {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.add_position {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    background: transparent;
+    padding-left: 10px;
+}
+
+.form_info {
+    padding: 20px 15px 20px 25px;
+}
+
+.form_info_title h5 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.form_info ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_info ul li {
+    list-style: disc;
+    margin-left: 15px;
+}
+
+.form_info ul li p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 11px;
+    color: #333333;
+}
+
+.form_info ul li p span {
+    font-weight: bold;
+}
+
+.form_info_title_blue {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.form_info_title_blue h5 {
+    color: #3399FF;
+}
+
+.flight {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.flight button {
+    background: none;
+    height: 16px;
+    width: 16px;
+}
+
+#counter {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.form_order_type {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 15px;
+}
+
+.form_order_type select {
+    width: 100%;
+    padding: 3px 10px;
+    background: #3399FF;
+    border-radius: 40px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    transition: 0.2s;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.payment-option svg path {
+    margin-right: 8px;
+    transition: 0.2s;
+}
+
+.payment-option.active {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3399FF;
+}
+
+.payment-option svg path {
+    fill: #292D32;
+}
+
+.payment-option.active svg path {
+    fill: #2196F3;
+}
+
+.form_pay {
+    padding: 20px 25px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_order_comment {
+    padding: 20px 25px;
+}
+
+.form_order_comment_comment {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333333;
+}
+
+.form_order_comment_comment input {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.form_order_content {
+    padding: 20px 25px;
+}
+
+.upload-container {
+    text-align: center;
+}
+
+.upload-btn {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #333333;
+    border-radius: 60px;
+    cursor: pointer;
+    background: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {}
+
+#file-input {
+    display: none;
+}
+
+.preview-container {
+    margin-top: 20px;
+    display: none;
+}
+
+.preview {
+    max-width: 20%;
+    max-height: 100px;
+    border-radius: 4px;
+}
+
+.file-info {
+    margin-top: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.order_btn_info {
+    width: 100%;
+    height: 50px;
+    background: #3399FF;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
